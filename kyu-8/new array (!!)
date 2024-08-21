@@ -1,0 +1,29 @@
+function getGrade (s1, s2, s3) {
+  
+  let alunos = [s1, s2 , s3];
+  let results = new Array(3);
+
+  for (let i = 0; i < 3; i++){
+
+    if (alunos[i] >= 90 && alunos[i] <= 100 ){
+      results[i] = "A";
+
+    } else if (alunos[i] >= 80 && alunos[i] < 90) {
+      results[i] = "B";
+
+    } else if (alunos[i] >= 70 && alunos[i] < 80) {
+      results[i] = "C";
+
+    } else if (alunos[i] >= 60 && alunos[i] < 70) {
+      results[i] = "D";
+
+    } else if (alunos[i] >= 0 && alunos[i] < 60 ) {
+      results[i] = "F";
+    }
+  }
+
+  return results;
+
+}
+
+console.log(getGrade(50,76,95));
